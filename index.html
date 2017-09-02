@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+	<title>JavaScript array</title>
+</head>
+<body>
+<!-- it is a body tag-->
+	  <div id="Output">
+	  </div>
+	  <script>
+ var arr=[3,4,5,6,76,7,8];
+      arr.push(9);
+      arr.push(10);
+      arr.push(11);
+      arr.push(12);
+      console.log(arr);//prints all the updated data.
+      arr.pop();
+      arr.pop();
+      arr.pop();
+      arr.pop();
+      console.log(arr);//deleted all the pushed data
+    console.log( arr.slice(1,4));
+     
+
+   console.log("Using for of loop===============");
+   for(var key of arr)
+   {
+   	 console.log(key);
+   }
+   console.log("Using for each loop");
+   
+     var number=arr.forEach(function(value,index)
+     {
+     	console.log("The value is "+value+ " and index is " +index);
+     });
+	  </script>
+</body>
+</html>
